@@ -1,0 +1,174 @@
+nav {
+    align-self: center;
+    width: 100%;
+    display: flex;
+}
+
+.header-nav-list {
+    position: fixed;
+    left: -100%;
+    top: 60px;
+    flex-direction: column;
+    background-color: #fff;
+    width: 40%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+}
+
+.header-nav-list.active {
+    left: 0;
+}
+
+.header-nav-list-item p {
+    margin: 10px 0;
+    color: #C2BCBC;
+}
+
+.header-search-container {
+    margin-right: 55px;
+    margin-left: 25px;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #C2BCBC;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.banner-text-container,
+h1 {
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.section1-container {
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: 1fr 1fr 2fr;
+}
+
+.section1-card4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.section2-container {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 30px 10px;
+}
+
+.section2-title {
+    margin-right: 0;
+}
+
+.section2-text p {
+    text-align: center;
+}
+
+.section2-button {
+    margin-left: 0;
+}
+
+.section3-container {
+    height: auto;
+}
+
+.section3-title h2 {
+    width: 95%;
+    text-align: center;
+}
+
+.section3-list {
+    margin-top: 60px;
+}
+
+.section4-container {
+    height: fit-content;
+}
+
+.section4-title h2 {
+    width: auto;
+    text-align: center;
+}
+
+.section4-post-container {
+    justify-content: space-around;
+}
+
+.section4-post-container,
+.section4-post {
+    height: fit-content;
+}
+
+.section4-post {
+    margin-top: 25px;
+}
+
+.section5-container {
+    height: fit-content;
+}
+
+.section5-img-container {
+    justify-content: space-around;
+}
+
+.section5-img1,
+.section5-img2,
+.section5-img3,
+.section5-img4,
+.section5-img5 {
+    margin-top: 20px;
+}
+
+.section6-container {
+    height: fit-content;
+}
+
+.section6-title h2 {
+    text-align: center;
+    width: auto;
+}
+
+.section6-post-container {
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.footer-top-container {
+    height: fit-content;
+    padding: 55px 20px;
+}
+
+.footer-top-left {
+    margin-bottom: 25px;
+}
